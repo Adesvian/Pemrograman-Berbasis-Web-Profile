@@ -1,0 +1,312 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0;
+  line-height: 1.8;
+  color: #333;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+.photo-profile,
+.navbar {
+  width: 250px;
+  margin: auto;
+}
+
+.photo-profile img {
+  width: 160px;
+  margin: -50px 51px 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  color: rgb(68, 68, 68);
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.back-logo img {
+  width: 40px;
+  margin: 20px 10px;
+}
+.navbar ul li {
+  line-height: 4.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  margin: 40px auto;
+  padding: 0px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Quicksand", Georgia, serif;
+  font-size: 15px;
+  position: relative;
+  color: #333;
+}
+
+.navbar a:after {
+  bottom: -10px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: cornflowerblue;
+  transition: width 0.3s, left 0.3s;
+  width: 0;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.footer .copy {
+  margin-top: 60px;
+  color: rgb(160, 160, 160);
+  text-align: center;
+  font-size: 12px;
+}
+
+.main {
+  width: 680px;
+  margin: 20px auto;
+  float: right;
+}
+
+.vector {
+  width: 680px;
+  height: 730px;
+  background-color: rgba(252, 238, 222, 0.507);
+  float: right;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.vector img {
+  width: 50%;
+  margin-top: 200px;
+  float: right;
+  filter: drop-shadow(-20px -3px 0px rgba(0, 0, 0, 0.7));
+}
+
+.intro,
+.Education,
+.skills,
+.Project-interface {
+  width: auto;
+  margin-top: 40px;
+  margin-left: 10px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.text_intro {
+  width: auto;
+  line-height: 1.2;
+  position: relative;
+  top: 200px;
+  left: 30px;
+}
+
+.text_intro h1 {
+  font-size: 52px;
+  text-align: left;
+}
+
+.text_intro h2 {
+  font-size: 13px;
+  margin-top: -30px;
+  margin-left: 5px;
+  letter-spacing: 10px;
+  font-family: Wigendatype;
+}
+
+.text_intro a {
+  text-decoration: none;
+  color: #333;
+}
+
+.intro p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: Roboto mono;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.personal_data h1,
+.Education h1,
+.skills h1,
+.Project-interface h1 {
+  font-family: Poppins;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 21px;
+  text-align: left;
+}
+
+.data ul {
+  margin-left: -40px;
+}
+
+.data ul li {
+  line-height: 3.6;
+  font-family: Poppins;
+  color: #999;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+.data ul li span {
+  width: 300px;
+}
+
+.logo_edu1 {
+  width: auto;
+  float: left;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.logo_edu1 img {
+  width: 60px;
+  margin-top: 10px;
+}
+
+.Education ul {
+  width: 500px;
+  margin-left: 50px;
+  margin-top: -65px;
+}
+.Education p {
+  font-family: poppins;
+  color: rgba(51, 51, 51, 0.384);
+}
+
+.Education ul li {
+  width: 300px;
+  font-family: Poppins;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  color: rgb(83, 83, 83);
+  font-weight: 800;
+  font-size: 19px;
+  list-style: none;
+}
+
+.skills {
+  width: 760px;
+  margin: 60px auto 90px;
+}
+
+.row-card h3 {
+  font-family: Poppins;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.row-card {
+  width: 190px;
+  max-width: 33%;
+  height: 280px;
+  background-color: rgb(245, 245, 245);
+  margin: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.384);
+}
+
+.row-card img {
+  margin: 20px 40px 0px;
+  width: 60%;
+}
+
+.bar {
+  margin-top: 30px;
+  margin-left: 19px;
+  width: 80%;
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 8px;
+  border: 2px solid #001d25c0;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 3px #02c6fc8c;
+}
+
+.bar span {
+  height: 8px;
+  float: left;
+  background: #02c6fcc4;
+}
+
+.photoshop {
+  width: 80%;
+}
+
+.Adobe {
+  width: 80%;
+}
+
+.Filmora {
+  width: 60%;
+}
+
+.Project-interface p {
+  font-family: Poppins;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 0.582);
+  margin-bottom: 20px;
+}
+
+.Project-interface h2 {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(10, 96, 255, 0.829);
+  margin-bottom: -15px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
